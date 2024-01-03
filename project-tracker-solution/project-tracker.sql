@@ -56,7 +56,7 @@ ALTER SEQUENCE public.grades_id_seq OWNED BY public.grades.id;
 -- Name: projects; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.projects (
+CREATE TABLE public.project (
     title character varying(30) NOT NULL,
     description text,
     max_grade integer
@@ -94,10 +94,10 @@ COPY public.grades (id, student_github, project_title, grade) FROM stdin;
 
 
 --
--- Data for Name: projects; Type: TABLE DATA; Schema: public; Owner: -
+-- Data for Name: project; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.projects (title, description, max_grade) FROM stdin;
+COPY public.project (title, description, max_grade) FROM stdin;
 Markov	Tweets generated from Markov chains	50
 Blockly	Programmatic Logic Puzzle Game	100
 \.
